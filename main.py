@@ -88,7 +88,7 @@ class StudentManager:
 
     # 6. 删除学生
     def del_student(self):
-        name = input("请输入你要修改的学生姓名:")
+        name = input("请输入你要删除的学生姓名:")
         for stu in self.students:
             if stu['name'] == name:
                 # self.students.remove(name)    这样的话会在列表中寻找值为'张三'的元素,但列表里只有字典
