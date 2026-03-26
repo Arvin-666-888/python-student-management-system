@@ -1,0 +1,14 @@
+# Git相关
+.git
+.gitignore
+
+# Python缓存
+__pycache__/
+*.pyc
+
+# 本地数据文件(可选,若想保留本地初始数据可注释掉)
+# students.json
+
+# 系统文件
+.DS_Store
+Thumbs.db

@@ -10,7 +10,7 @@ Python企业级实战项目 | 求职简历必备 | 全功能完整版
 
 🛠️ 技术栈
 
-核心语言: Python 3.9 ~ 3.12
+核心语言: Python 3.9 \~ 3.12
 
 核心技术: 面向对象编程（OOP）、模块化设计、异常处理
 
@@ -34,7 +34,9 @@ Python企业级实战项目 | 求职简历必备 | 全功能完整版
 
 控制台菜单交互：提供简洁直观的文本菜单，操作指引清晰。
 
-🚀 快速开始
+🚀 运行步骤
+
+方式一:本地Python运行
 
 按照以下步骤，即可在本地运行本项目：
 
@@ -58,6 +60,36 @@ python main.py
 
 随后，程序将启动并显示交互菜单，您可以根据提示进行各项操作。
 
+方式二:Docker一键运行
+
+克隆本仓库到本地
+
+bash
+复制
+git clone https://github.com/Arvin-666-888/python-student-management-system.git
+
+进入项目目录
+
+bash
+复制
+cd python-student-management-system
+
+构建Docker镜像
+
+bash
+复制
+docker build -t student-system:v1
+
+运行容器(带数据持久化)
+
+bash
+复制
+# Windows PowerShell
+
+docker run -it --name student-container -v ${PWD}:/app student-system:v1
+
+
+
 📁 项目结构
 复制
 python-student-management-system/
@@ -68,3 +100,4 @@ python-student-management-system/
 🤝 贡献
 
 欢迎提交 Issues 和 Pull Requests 来帮助改进此项目。
+
